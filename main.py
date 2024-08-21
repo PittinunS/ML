@@ -37,13 +37,13 @@ if classifier == 'DT':
   y_pred = svm.predict(x_test)
   acc = accuracy_score(y_test, y_pred)
   st.write(acc)
-  if classifier == 'RF':
+if classifier == 'RF':
   rf = RandomForestClassifier()
   rf.fit(x_train, y_train)
   y_pred = svm.predict(x_test)
   acc = accuracy_score(y_test, y_pred)
   st.write(acc)
-  if classifier == 'NN':
+if classifier == 'NN':
   nn = MLPClassifier()
   nn.fit(x_train, y_train)
   y_pred = svm.predict(x_test)
